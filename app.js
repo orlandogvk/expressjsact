@@ -34,7 +34,7 @@ app.get('/nosotros',(req,res)=>{
                 console.log(error)
             }
         })
-        res.send(`<h1>Visitas:${visitas}</h1>`)
+        res.send(`<h1 style="font-family:verdana;color:red;text-align:center;margin-top:25%">Visitas:${visitas}</h1>`)
     })
 })
 
