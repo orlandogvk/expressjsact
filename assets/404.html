@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <title>Page-404</title>
+</head>
+
+<body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color:black; 
+    }
+
+    .container{
+      width:100%;
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      text-align:center;
+      color:#f7bcbc;
+    }
+
+    .container h1{
+      font-size:160px;
+      margin:0;
+      font-weight: 900;
+      letter-spacing: 20px;
+      background:url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0&w=1000&q=80") center no-repeat;
+      -webkit-text-fill-color:transparent;
+      -webkit-background-clip:text;
+    }
+
+    .container a{
+      text-decoration:none;
+      background:#e55039aa;
+      color:#fff;
+      padding:12px 24px;
+      display:inline-block;
+      border-radius: 25px;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: 0.4s;
+    }
+
+    .container a:hover{
+      background:#e55039;
+    }
+  </style>
+
+  <div class="container">
+    <h2>Oops! Page not found</h2>
+    <h1>404</h1>
+    <p>We can't find the page you're looking for</p>
+    <a href="#">Go back home</a>
+  </div>
+</body>
+
+</html>
