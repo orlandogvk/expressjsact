@@ -17,8 +17,8 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.5.2",
-    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "fontawesome": "^5.6.3",
     "morgan": "^1.10.0"
