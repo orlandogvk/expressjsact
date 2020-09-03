@@ -9,16 +9,19 @@ app.set('appName','App con express JS Academlo')
 
 //Midleware
 app.use(morgan(`dev`)) //formato de peticion
-
+app.use(express.static('public'))
 
 //Midlewares get
 app.get('/',(req,res)=>{
-        res.sendFile(__dirname + '/assets/index.html');
+        res.sendFile(__dirname + '/public/login.html');
 })
 
-app.get('/inicio',(req,res)=>{
+/* app.get('/inicio',(req,res)=>{
     // res.sendFile('C:\\Users\\Usuario\\Desktop\\filesExpress\\assets'+'/login.html')
-        res.sendFile(__dirname + '/assets/login.html');
+        res.sendFile(__dirname + '/public/login.html');
+}) */
+app.get('/registro',(req,res)=>{
+    res.sendFile(__dirname + '/public/register.html');
 })
 
 app.get('/nosotros',(req,res)=>{  
@@ -38,15 +41,13 @@ app.get('/nosotros',(req,res)=>{
     })
 })
 
-app.get('/registro',(req,res)=>{
-    res.sendFile(__dirname + '/assets/register.html');
-})
+
 app.get('/restablecer-contrasena',(req,res)=>{
-    res.sendFile(__dirname + '/assets/password.html');
+    res.sendFile(__dirname + '/public/forgot-password.html');
 })
 
 app.get('*', function(req, res){
-    res.status(404).sendFile(__dirname + '/assets/404.html');
+    res.status(404).sendFile(__dirname + '/public/404.html');
   });
 
 
